@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is the description of my website" />
+    <title>Mira 4K</title>
+    <link rel="stylesheet" href="./assests/style/subscribe.css">
+    <link rel="shortcut icon" href="assests/style/imgs/Logo.png" type="image/x-icon">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</head>
+<body>
+    <header>
+      <nav>
+        <div style="margin-top:-27px;" class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="assests/style/imgs/Logo.png" class="h-17" width="110px" alt="Mira4K">
+          </a>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" id="LoginBtn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="login.html">Login</a></button>              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul id="navlist" class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0">Home</a>
+              </li>
+              <li>
+                <a href="subscribe.html" id="sub-nav" style="color: rgba(225, 121, 0, 1);" class="block py-2 px-3 rounded md:hover:bg-transparent md:p-0">Subscribe</a>
+              </li>
+              <li>
+                <a href="contact-us.html" id="contact-nav" class="block py-2 px-3 rounded md:hover:bg-transparent md:p-0">Contact-Us</a>
+              </li>
+            </ul>
+          </div>
+          </div>  
+      </nav>
+      </header>
+      <main>
+        <h1 id="subscribe-title" class="mt-10 text-3xl font-bold text-left">Our Playlists</h1>  
+    <div id="subscribe-section">
+        <div id="sub-card">
+            <div class="sec-1" style="position: relative;"><a href="">
+                <!-- <h5 style="position: absolute;" class="text-2xl font-bold tracking-tight text-gray-600">MIRA 4K Basic playlist 12 month subscription</h5><br> -->
+                <img src="assests/style/imgs/card.png" alt="" width="200px"></a>
+            </div>
+            <div class="sec-2">
+                <p class="mb-1 text-gray-600">+70.000 Channels</p>
+                <hr>
+                <p class="mb-1 text-gray-600">+100.000 Vod & series</p>
+                <hr>
+                <p class="mb-1 text-gray-600">Channels Quality 4K </p>
+                <hr>
+                <p class="mb-1 text-gray-600">Technical assistance & support 24/7</p>
+                </div>
+            <div class="sec-3 items-center" >
+                <span class="font-bold text-gray-600 text-3xl">25 EUR</span>
+                <button data-popover-target="popover-default" type="button" style="background-color:rgba(225, 121, 0, 1) ;" class="text-white font-bold rounded-lg text-sm px-5 py-2.5 text-center">Subscribe</button>
+                <div data-popover id="popover-default" role="tooltip" class="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+                    <div  style="background-color:rgba(225, 121, 0, 1) ;" class="px-3 py-2 border-b border-gray-200 rounded-t-lg dark:border-gray-600 dark:bg-gray-700">
+                        <h3 style="background-color:rgba(225, 121, 0, 1) ;" class="font-semibold text-white">Mira4K</h3>
+                    </div>
+                    <div class="px-3 py-2">
+                        <p>You can contact our technical Support with our numbers in footer</p>
+                    </div>
+                    <div data-popper-arrow></div>
+                </div>
+              </div>            </div>
+        </div>
+    </div>
+    </main>
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div id="footer-main" class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">About</h2>
+            <p class="text-white font-medium">
+              MIRA playlist  offer all image qualities to view our iptv service everywhere, regardless of your
+              network speed on: Mobile / TV / Android box / PC ..
+            </p>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">Technical support</h2>
+              <ul class="text-white font-medium">
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/european-union.png" alt="" srcset="">
+                  <a href="https://wa.me/+4591426091" class="hover:underline">+4591426091</a>
+                  <!-- <p>(Only WhatsApp)</p> -->
+                </li>
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/united-arab-emirates.png" alt="" >
+                  <a href="https://wa.me/+971509856234" class="hover:underline">+971 50 985 6234</a>
+                  <!-- <p>(Only WhatsApp)</p> -->
+                </li>
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/egypt.png" alt="" >
+                  <a href="https://wa.me/+201093561570" class="hover:underline">+20 109 356 1570</a>
+                </li>
+            </ul>
+          </div>
+          <div clas>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">Sales</h2>
+              <ul class="text-white font-medium">
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/european-union.png" alt="" srcset="">
+                    <a href="https://wa.me/+4591426091" class="hover:underline">+4591426091</a>
+                    <!-- <p>(Only WhatsApp)</p> -->
+                  </li>
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/united-arab-emirates.png" alt="" >
+                    <a href="https://wa.me/+971509856234" class="hover:underline">+971 50 985 6234</a>
+                    <!-- <p>(Only WhatsApp)</p> -->
+                  </li>
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/egypt.png" alt="" >
+                    <a href="https://wa.me/+201093561570" class="hover:underline">+20 109 356 1570</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+            <h2 id="main-policy" class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Policies & Conditions</h2>
+            <ul id="policy" class="text-white font-medium">
+                <li class="mb-2">
+                    <a href="#" class="hover:underline">Terms & Conditions</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:underline">Privacy Policy </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div id="footer-2" class="px-4 py-6">
+          <span class="text-sm text-white dark:text-gray-300 sm:text-center">© 2024 <a href="#">Mira4K™</a>All Rights Reserved
+          </span>
+          <div style="margin-left: 20px;" class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+              <a href="https://www.facebook.com/profile.php?id=61561081300186" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img class="w-8 h-8" src="./assests/style/imgs/logos_facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/mira4k245/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img class="w-8 h-8" src="./assests/style/imgs/skill-icons_instagram.png" alt="">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img class="w-8 h-8" src="./assests/style/imgs/logos_tiktok-icon.png" alt="">
+                </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+  
+
+</body>
+</html>

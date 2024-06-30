@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira 4K</title>
+    <link rel="stylesheet" href="./assests/style/contact-us.css">
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="assests/style/imgs/Logo.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/sib-api-v3-sdk@8.3.0/dist/index.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</head>
+<body>
+    <header>
+      <nav>
+        <div style="margin-top:-27px;" class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img src="assests/style/imgs/Logo.png" class="h-17" width="110px" alt="Mira4K">
+          </a>
+          <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button type="button" id="LoginBtn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><a href="login.html">Login</a></button>              <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+          </div>
+          <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul id="navlist" class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="index.html" class="block py-2 px-3 rounded md:bg-transparent md:p-0">Home</a>
+              </li>
+              <li>
+                <a href="subscribe.html" id="sub-nav" class="block py-2 px-3 rounded md:hover:bg-transparent md:p-0">Subscribe</a>
+              </li>
+              <li>
+                <a href="contact-us.html" id="contact-nav" style="color: rgba(225, 121, 0, 1);" class="block py-2 px-3 rounded md:hover:bg-transparent md:p-0">Contact-Us</a>
+              </li>
+            </ul>
+          </div>
+          </div>  
+      </nav>
+      </header>
+      <hr>
+    <h1 id="contact-title" class="mt-10 text-3xl font-bold">Contact Us</h1>  
+    <form class="max-w-sm mx-auto mt-10">
+      <div class="mb-5">
+        <label for="name" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Name</label>
+        <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Name" required />
+      </div>
+      <div class="mb-5">
+          <label for="phone_number" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Phone Number</label>
+          <input type="tel" id="phone_number" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Phone Number" required />
+        </div>
+      <div class="mb-5">
+          <label for="email" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Email</label>
+          <input type="email" id="email" class=" w-auto shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Email" required />
+        </div>
+        <div class="mb-5">
+          <label for="large-input" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Message</label>
+          <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Type your message"></textarea>
+      </div>
+      <button type="submit" id="submit-btn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    </form>  
+    <footer>
+      <div class="mx-auto w-full max-w-screen-xl">
+        <div id="footer-main" class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">About</h2>
+            <p class="text-white font-medium">
+              MIRA playlist  offer all image qualities to view our iptv service everywhere, regardless of your
+network speed on: Mobile / TV / Android box / PC ..
+            </p>
+          </div>
+          <div>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">Technical support</h2>
+              <ul class="text-white font-medium">
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/european-union.png" alt="" srcset="">
+                  <a href="https://wa.me/+4591426091" class="hover:underline">+4591426091</a>
+                  <!-- <p>(Only WhatsApp)</p> -->
+                </li>
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/united-arab-emirates.png" alt="" >
+                  <a href="https://wa.me/+971509856234" class="hover:underline">+971 50 985 6234</a>
+                  <!-- <p>(Only WhatsApp)</p> -->
+                </li>
+                <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                  <img src="./assests/style/imgs/egypt.png" alt="" >
+                  <a href="https://wa.me/+201093561570" class="hover:underline">+20 109 356 1570</a>
+                </li>
+            </ul>
+          </div>
+          <div clas>
+              <h2 class="mb-6 text-sm font-semibold text-white uppercase">Sales</h2>
+              <ul class="text-white font-medium">
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/european-union.png" alt="" srcset="">
+                    <a href="https://wa.me/+4591426091" class="hover:underline">+4591426091</a>
+                    <!-- <p>(Only WhatsApp)</p> -->
+                  </li>
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/united-arab-emirates.png" alt="" >
+                    <a href="https://wa.me/+971509856234" class="hover:underline">+971 50 985 6234</a>
+                    <!-- <p>(Only WhatsApp)</p> -->
+                  </li>
+                  <li class="mb-2" style="display:flex; align-items:center; gap:0px 10px">
+                    <img src="./assests/style/imgs/egypt.png" alt="" >
+                    <a href="https://wa.me/+201093561570" class="hover:underline">+20 109 356 1570</a>
+                  </li>
+              </ul>
+          </div>
+          <div>
+            <h2 id="main-policy" class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Policies & Conditions</h2>
+            <ul id="policy" class="text-white font-medium">
+                <li class="mb-2">
+                    <a href="#" class="hover:underline">Terms & Conditions</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#" class="hover:underline">Privacy Policy </a>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <div id="footer-2" class="px-4 py-6">
+          <span class="text-sm text-white dark:text-gray-300 sm:text-center">© 2024 <a href="#">Mira4K™</a>All Rights Reserved
+          </span>
+          <div style="margin-left: 20px;" class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+              <a href="https://www.facebook.com/profile.php?id=61561081300186" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                    <img class="w-8 h-8" src="./assests/style/imgs/logos_facebook.png" alt="">
+                </a>
+                <a href="https://www.instagram.com/mira4k245/" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img class="w-8 h-8" src="./assests/style/imgs/skill-icons_instagram.png" alt="">
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                  <img class="w-8 h-8" src="./assests/style/imgs/logos_tiktok-icon.png" alt="">
+                </a>
+          </div>
+        </div>
+      </div>
+  </footer>
+   
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="assests/js/jquery.3.4.1.min.js"></script>
+<script src="assests/js/smtp-server.js"></script>
+</body>
+</html>

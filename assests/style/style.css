@@ -1,0 +1,330 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+  /* padding: 0px 60px; */
+}
+
+#LogoName {
+  color: white;
+  font-size: 30px;
+}
+
+#logoImg {
+  margin-top: -15px;
+}
+
+#LoginBtn {
+  font-size: medium;
+  padding: 7px 30px;
+  background-color: 
+  rgba(225, 121, 0, 1);
+}
+
+#langbtn {
+  background-color: transparent;
+  border: 0px solid black;
+  color: white;
+  border-radius: 6px;
+  outline: none;
+  cursor: pointer;
+  outline-color: rgb(0, 0, 0);
+}
+
+#slider{
+height: 520px;
+}
+
+#navbtn {
+  background-color: transparent;
+}
+
+#langbtn:focus {
+  border: 0px solid rgb(0, 0, 0);
+  outline-color: rgb(0, 0, 0);
+}
+
+#langbtn option {
+  background-color: transparent;
+}
+
+nav {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+}
+.navbar {
+  display: flex;
+  /* align-items: center; */
+  padding: 0px 10px;
+}
+#langBtn {
+  background-color: transparent;
+  color: white;
+}
+
+#active {
+  color: #f7dbad;
+}
+
+#navlist {
+  background-color: transparent;  
+}
+
+#navlist li a {
+  color: gray;
+}
+
+#navlist li a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.banners img {
+  width: 100vw;
+}
+.grid-posters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px 10px;
+  gap: 10px 0px;
+}
+.grid-posters img {
+  border-radius: 8px;
+  flex-grow: 1;
+  margin: 0px 20px;
+  width: 120px;
+}
+
+#subscribe-section img {
+  width: 220px;
+}
+
+.subscripe-title {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0px 50px;
+  margin-top: 40px;
+}
+
+#lang-list {
+  color: white;
+}
+
+#sub-btn {
+  background: rgba(225, 121, 0, 1);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 0px;
+}
+
+#sub-btn:hover {
+  background-color: rgb(255, 136, 0);
+  color: white;
+  transition: 0.3s;
+}
+
+.sub-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#sub-card {
+  padding: 20px 20px;
+}
+
+#subscribe-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 100px;
+}
+
+#sub-description {
+  font-weight: bold;
+}
+
+footer {
+  background: rgba(225, 121, 0, 1);
+  /* height: 40vh; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* padding: 0px 20px; */
+}
+
+#sec-1 {
+  width: 30vw;
+}
+
+#sec-1 h2 {
+  margin: 15px 0px;
+}
+.footer-sec {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  margin-left: 20px;
+}
+
+#footer-2 {
+  background: rgba(225, 121, 0, 1);
+}
+.footer-sec span {
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+}
+
+.footer-sec h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+@media (max-width: 766px) and (min-width: 200px) {
+  #active {
+    border: 1px solid white;
+  }
+
+  #slider{
+    height: 180px;
+  }
+
+  #sub-card {
+    border: 3px solid rgb(255, 136, 0);
+    margin: 20px 15px;
+  }
+
+  #navlist {
+    border: 0px;
+    border-radius: 6px;
+    background-color: rgba(225, 121, 0, 1);
+    color: white;
+  }
+  #navlist li a:hover {
+    border: 1px solid white;
+  }
+
+  .sub-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+  }  
+
+  .subscripe-title {
+    font-weight: bold;
+    margin: 20px 40px;
+    margin-top: -10px;
+  }
+
+
+  #subscribe-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -10px;
+  }
+
+  #subscribe-section img {
+    width: 65vw;
+    height: 60vh;
+  }
+
+  
+}
+
+@media (max-width: 430px) and (min-width: 200px) {
+  #footer-main{
+    display: flex !important; 
+    flex-direction: column !important; 
+    line-height: 18px;
+  }
+
+  #main-policy{
+    display: flex;
+    justify-content: center;
+  }
+  #policy{
+   display: flex;
+   align-items: center;
+  }
+
+  #policy li{
+    margin: 0px 10px;
+  }
+  #sub-card {
+    border: 3px solid rgb(255, 136, 0);
+    margin: 20px 20px;
+  }
+
+  #slider{
+    height: 180px;
+  }
+
+  .subscripe-title {
+    font-weight: bold;
+    font-size: 25px;
+    margin: 20px 20px;
+    margin-top: -10px;
+  }
+
+  #subscribe-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
+  }
+
+  #subscribe-section img {
+    width: 65vw;
+    height: 40vh;
+  }
+
+  #LoginBtn {
+    font-size: 15px;
+    margin-left: 10px;
+    padding: 5px 12px;
+  }
+
+  #navlist li a {
+    color: rgb(253, 253, 253);
+  }
+
+  #footer-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-posters img{
+   width: 220px; 
+ }
+
+  #footer-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

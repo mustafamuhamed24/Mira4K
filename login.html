@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mira 4K</title>
+    <link rel="stylesheet" href="assests/style/login.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  </head>
+  <body>
+    <div
+    id="form"
+    class="flex flex-col items-center justify-center min-h-screen"
+    method="POST"
+    action="{{ route('login') }}"
+  >
+    <div class="w-full max-w-md p-8 space-y-6 bg-white shadow-md rounded-lg">
+      <a href="./index.html">
+        <img
+          class="mx-auto w-25px"
+          src="./assests/style/imgs/Logo.png"
+          width="150px"
+          alt=""
+          srcset=""
+        />
+      </a>
+      <h1
+        style="color: #5f5f5f"
+        class="text-xl font-bold text-left text-gray-800"
+      >
+        LOGIN
+      </h1>
+      <form class="space-y-4">
+        <div class="mb-4 font-medium text-sm text-green-600">
+        </div>
+        <div id="input">
+          <x-label for="email" value="" />
+          <input
+            type="email"
+            id="email"
+            :value="old('email')"
+            required
+            autofocus
+            autocomplete="username"
+            name="email"
+            class="w-full px-3 py-1.5 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            placeholder="Email"
+          />
+          <!-- {{-- <label for="email" style="color: red">invalid email</label> --}} -->
+        </div>
+        <div id="input">
+          <!-- <x-label for="password" value="{{ __('Password') }}" /> -->
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            autocomplete="current-password"
+            class="w-full px-3 py-1.5 rounded-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+            placeholder="Password"
+          />
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+          </div>
+          <div class="text-sm">
+            <a
+              style="color: red"
+              href="Recover-password.html"
+              class="font-medium text-indigo-600 hover:text-indigo-500"
+              ><u>Forgot your password?</u></a
+            >
+          </div>
+        </div>
+        <div>
+          <button
+            type="submit"
+            style="background-color: rgba(225, 121, 0, 1)"
+            class="w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          >
+          <span class="font-bold" style="font-size: 17px;">Not Available Now</span>
+          </button>
+          &nbsp;
+          <div class="or-btn">
+            <div class="div"></div>
+            &nbsp;
+            <legend class="text-center text-gray-400">or</legend>
+            &nbsp;
+            <div class="div"></div>
+          </div>
+        </div>
+        <div class="mt-7 flex flex-col gap-2">
+
+          <button
+          class="inline-flex h-10 w-full items-center justify-center gap-4 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+              src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"
+              class="h-[18px] w-[18px] ">Continue with
+          Google
+         </button>
+     
+          <button
+          style="background-color:#1877F2"
+              class="inline-flex h-10 w-full items-center justify-center gap-4 rounded border border-slate-300 bg-blue p-2 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                style="margin-left:15px;"  src="assests/style/imgs/logos_facebook.png" alt="Facebook"
+                  class="h-[18px] w-[18px] ">
+              Continue with Facebook
+          </button>
+
+          <button
+          style="background-color: black;"
+              class="inline-flex h-10 w-full items-center justify-center gap-4 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"><img
+                  src="assests/style/imgs/twitter-x-icon-logo-116902890413xbfexhf8l 1.png" alt="Twitter"
+                  class="h-[18px] w-[18px] ">Continue with
+              Twitter
+          </button>
+      </div>
+        <p class="text-center font-bold text-gray-400">
+          Create an account ? &nbsp;&nbsp;<a href="sign-up.html"
+            ><u class="text-blue-600">Sign-up</u></a
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+  </body>
+</html>
